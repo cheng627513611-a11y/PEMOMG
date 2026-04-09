@@ -68,7 +68,7 @@ print(id2sp)
 
 
 def get_f_e_energy(comp_str, eles):
-    with MPRester("5AUmNElsx9nNh2Tdqhf2UDzPjvlGIQZw") as mpr:
+    with MPRester("your api_key") as mpr:
         es = [e.name for e in eles]
         # Obtain only corrected GGA and GGA+U ComputedStructureEntry objects
         entries = mpr.get_entries_in_chemsys(elements=es,
